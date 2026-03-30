@@ -1,6 +1,7 @@
 'use client';
 
 import Link from 'next/link';
+import Image from 'next/image';
 
 export default function Footer() {
     return (
@@ -10,7 +11,13 @@ export default function Footer() {
                     {/* Brand & Info */}
                     <div className="col-span-1 lg:col-span-2">
                         <Link href="/" className="inline-block mb-6">
-                            <span className="text-2xl font-black text-stone-900 drop-shadow-sm">청라나눔내과</span>
+                            <Image
+                                src="/logo.png"
+                                alt="청라나눔내과 로고"
+                                width={240}
+                                height={60}
+                                className="drop-shadow-sm brightness-0"
+                            />
                         </Link>
                         <p className="text-stone-600 mb-6 leading-relaxed">
                             청라국제도시 청라동 주민 여러분의 건강 주치의.<br />

@@ -10,10 +10,10 @@ export default function Header() {
                 {/* Logo */}
                 <Link href="/" className="logo">
                     <Image
-                        src="/logo.svg"
-                        alt="청라나눔내과"
-                        width={200}
-                        height={50}
+                        src="/logo.png"
+                        alt="청라나눔내과 로고"
+                        width={280}
+                        height={70}
                         priority
                         className="logo-image"
                     />
