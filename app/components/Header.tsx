@@ -1,22 +1,20 @@
 'use client';
 
 import Link from 'next/link';
-import Image from 'next/image';
 
 export default function Header() {
     return (
         <header className="site-header">
             <div className="header-container">
-                {/* Logo */}
-                <Link href="/" className="logo">
-                    <Image
-                        src="/logo.png"
-                        alt="청라나눔내과 로고"
-                        width={280}
-                        height={70}
-                        priority
-                        className="logo-image"
-                    />
+                {/* Logo - Brand colors: teal + orange matching clinic identity */}
+                <Link href="/" className="logo flex items-center gap-2 no-underline">
+                    <span className="inline-flex items-center justify-center w-9 h-9 rounded-lg text-white text-sm font-black tracking-tight leading-none"
+                        style={{ backgroundColor: '#1a5c6b', letterSpacing: '-0.5px' }}>
+                        <span style={{ fontSize: '8px', lineHeight: '1.1', textAlign: 'center' }}>NA<br/>NUM</span>
+                    </span>
+                    <span className="text-xl font-black tracking-tight" style={{ color: '#1a5c6b' }}>
+                        청라나눔내과
+                    </span>
                 </Link>
 
                 {/* Navigation */}

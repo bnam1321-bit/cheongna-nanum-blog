@@ -1,7 +1,6 @@
 'use client';
 
 import Link from 'next/link';
-import Image from 'next/image';
 
 export default function Footer() {
     return (
@@ -10,14 +9,12 @@ export default function Footer() {
                 <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
                     {/* Brand & Info */}
                     <div className="col-span-1 lg:col-span-2">
-                        <Link href="/" className="inline-block mb-6">
-                            <Image
-                                src="/logo.png"
-                                alt="청라나눔내과 로고"
-                                width={240}
-                                height={60}
-                                className="drop-shadow-sm brightness-0"
-                            />
+                        <Link href="/" className="inline-flex items-center gap-2 mb-6 no-underline">
+                            <span className="inline-flex items-center justify-center w-8 h-8 rounded-lg text-white text-xs font-black tracking-tight leading-none"
+                                style={{ backgroundColor: '#1a5c6b', letterSpacing: '-0.5px' }}>
+                                <span style={{ fontSize: '7px', lineHeight: '1.1', textAlign: 'center' }}>NA<br/>NUM</span>
+                            </span>
+                            <span className="text-xl font-black drop-shadow-sm" style={{ color: '#1a5c6b' }}>청라나눔내과</span>
                         </Link>
                         <p className="text-stone-600 mb-6 leading-relaxed">
                             청라국제도시 청라동 주민 여러분의 건강 주치의.<br />
