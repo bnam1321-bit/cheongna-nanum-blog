@@ -65,16 +65,7 @@ export default function ServicesPage() {
                         </p>
                     </div>
 
-                    {/* 비만 클리닉 */}
-                    <div className="bg-white rounded-3xl p-8 shadow-md hover-lift border border-stone-100">
-                        <div className="w-16 h-16 rounded-2xl bg-stone-100 border border-stone-200 flex items-center justify-center text-3xl mb-6 shadow-sm">
-                            ⚖️
-                        </div>
-                        <h3 className="text-2xl font-bold text-stone-900 mb-4 tracking-tight">비만 클리닉</h3>
-                        <p className="text-stone-600 leading-relaxed">
-                            체계적인 체중 관리 프로그램
-                        </p>
-                    </div>
+
                 </div>
 
                 {/* 진료 시간 */}
