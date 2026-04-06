@@ -82,16 +82,20 @@ export default function ServicesPage() {
                     <h2 className="text-3xl font-bold text-stone-900 mb-8 text-center tracking-tight">진료 시간</h2>
                     <div className="max-w-2xl mx-auto space-y-4">
                         <div className="flex justify-between py-3 border-b border-stone-100">
-                            <span className="font-semibold text-stone-700">평일 (월~금)</span>
-                            <span className="text-stone-600">08:30 ~ 18:30</span>
+                            <span className="font-semibold text-stone-700">평일 (월,화,목,금)</span>
+                            <span className="text-stone-600">08:30 ~ 18:00</span>
                         </div>
                         <div className="flex justify-between py-3 border-b border-stone-100">
-                            <span className="font-semibold text-stone-700">점심시간</span>
+                            <span className="font-semibold text-stone-700">수요일</span>
+                            <span className="text-stone-600">08:30 ~ 18:00 <br/><span className="text-amber-600 text-sm font-bold">*26.5.1부터 오후 휴진</span></span>
+                        </div>
+                        <div className="flex justify-between py-3 border-b border-stone-100">
+                            <span className="font-semibold text-stone-700">휴게시간 (월~금)</span>
                             <span className="text-stone-600">13:00 ~ 14:00</span>
                         </div>
                         <div className="flex justify-between py-3 border-b border-stone-100">
                             <span className="font-semibold text-amber-700">토요일</span>
-                            <span className="text-stone-600">08:30 ~ 14:00</span>
+                            <span className="text-stone-600">08:30 ~ 13:30</span>
                         </div>
                         <div className="flex justify-between py-3">
                             <span className="font-semibold text-red-500">일/공휴일</span>
