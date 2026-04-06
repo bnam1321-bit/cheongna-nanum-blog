@@ -18,7 +18,7 @@ export default function Home() {
         <div className="relative max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-28 sm:py-36">
           <div className="text-center">
             <div className="inline-flex items-center px-5 py-2.5 bg-white/10 backdrop-blur-md rounded-full mb-8 border border-white/20 shadow-lg">
-              <span className="text-sm font-bold text-stone-50 tracking-wide">🏥 프리미엄 소화기 내과 전문의 진료</span>
+              <span className="text-sm font-bold text-stone-50 tracking-wide">🏥 소화기 내과 전문의 진료</span>
             </div>
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black mb-8 text-white break-keep leading-tight sm:leading-snug lg:leading-normal drop-shadow-lg">
               청라국제도시 청라동<br />

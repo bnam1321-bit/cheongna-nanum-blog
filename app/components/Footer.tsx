@@ -42,15 +42,16 @@ export default function Footer() {
                             <li className="flex justify-between items-start border-b border-stone-100 pb-2">
                                 <span className="font-bold text-stone-800 w-20">평일</span>
                                 <div className="text-right text-stone-600">
-                                    <span className="block font-medium text-stone-900">08:30 - 18:30</span>
-                                    <span className="text-xs text-stone-500">점심시간 13:00 - 14:00</span>
+                                    <span className="block font-medium text-stone-900">08:30 - 18:00</span>
+                                    <span className="block text-xs font-bold text-amber-600 mt-0.5 mb-0.5">*26년 5월 1일부터 수요일 오후 휴진</span>
+                                    <span className="text-xs text-stone-500">휴게시간 13:00 - 14:00</span>
                                 </div>
                             </li>
                             <li className="flex justify-between items-start border-b border-stone-100 pb-2">
                                 <span className="font-bold text-amber-700 w-20">토요일</span>
                                 <div className="text-right text-stone-600">
-                                    <span className="block font-medium text-stone-900">08:30 - 14:00</span>
-                                    <span className="text-xs text-stone-500">점심시간 없음</span>
+                                    <span className="block font-medium text-stone-900">08:30 - 13:30</span>
+                                    <span className="text-xs text-stone-500">휴게시간 없음</span>
                                 </div>
                             </li>
                             <li className="flex justify-between items-center pt-1">
