@@ -83,7 +83,7 @@ export default async function BlogPostPage({ params }: Props) {
         author: {
             '@type': 'MedicalClinic',
             name: '청라나눔내과',
-            url: 'https://cheongnananum.co.kr'
+            url: 'https://cheongnanum.co.kr'
         },
     };
 

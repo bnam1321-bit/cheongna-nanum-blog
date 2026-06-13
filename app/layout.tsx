@@ -10,8 +10,8 @@ const jsonLd = {
   "@context": "https://schema.org",
   "@type": "MedicalClinic",
   "name": "청라나눔내과",
-  "image": "https://cheongnananum.co.kr/logo.png",
-  "url": "https://cheongnananum.co.kr",
+  "image": "https://cheongnanum.co.kr/logo.png",
+  "url": "https://cheongnanum.co.kr",
   "telephone": "032-567-0750",
   "address": {
     "@type": "PostalAddress",
@@ -51,10 +51,13 @@ const notoSansKR = Noto_Sans_KR({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://cheongnananum.co.kr'),
+  metadataBase: new URL('https://cheongnanum.co.kr'),
   title: "청라나눔내과 | 인천 서구 소화기내과 전문",
   description: "인천 서구 청라나눔내과, 소화기 내과 전문의 진료, 위대장내시경, 건강검진 안내.",
   keywords: "인천 서구 내과, 인천서구내과, 청라신도시내과, 청라동내과, 청라나눔내과, 건강검진, 위내시경, 대장내시경",
+  alternates: {
+    canonical: '/',
+  },
 };
 
 export default function RootLayout({
