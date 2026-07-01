@@ -1,4 +1,4 @@
-﻿const fs = require('fs');
+const fs = require('fs');
 const path = require('path');
 const { GoogleGenerativeAI } = require('@google/generative-ai');
 const { format } = require('date-fns');
@@ -170,30 +170,11 @@ coverImage: ""
         }
     }
 
-    // 모든 재시도 실패 시 Fallback
+    // 모든 재시도 실패 시 종료 (Fallback 제거)
     if (!content) {
-        console.error('📋 모든 재시도 실패. Fallback 콘텐츠 생성...');
+        console.error('📋 모든 재시도 실패. 본문 생성을 취소하고 종료합니다.');
         console.error('📋 마지막 에러:', JSON.stringify(lastError, null, 2));
-
-        // 주제별 맞춤 컨텐츠 생성 (Fallback)
-        const topicContent = generateTopicContent(topic);
-        content = `---
-title: "${topic}"
-date: "${today}"
-description: "${topicContent.description}"
-tags: ${JSON.stringify(topicContent.tags)}
-author: "청라나눔내과"
-coverImage: ""
----
-
-${topicContent.content}
-
----
-
-> 💡 **중요 안내**  
-> 본 정보는 일반적인 건강 가이드이며, 개인의 상태에 따라 다를 수 있습니다.  
-> 정확한 진단과 치료를 위해서는 반드시 전문의와 상담하시기 바랍니다.
-`;
+        process.exit(1);
     }
 
     // 3. 이미지 설정 (SEO 및 OG 태그용)
